@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_hoa_don">
+
+    <fragment
+        android:id="@+id/nav_hoa_don"
+        android:name="com.example.librarypnlib.ui.bill.HoaDonFragment"
+        android:label="Bill"
+        tools:layout="@layout/fragment_hoa_don" />
+
+    <fragment
+        android:id="@+id/nav_loai_sach"
+        android:name="com.example.librarypnlib.ui.book_category.LoaiSachFragment"
+        android:label="Book category"
+        tools:layout="@layout/fragment_loai_sach" />
+
+    <fragment
+        android:id="@+id/nav_sach"
+        android:name="com.example.librarypnlib.ui.book.SachFragment"
+        android:label="Book"
+        tools:layout="@layout/fragment_sach" />
+    <fragment
+        android:id="@+id/nav_thanh_vien"
+        android:name="com.example.librarypnlib.ui.member.ThanhVienFragment"
+        android:label="User management"
+        tools:layout="@layout/fragment_thanh_vien" />
+
+    <fragment
+        android:id="@+id/nav_top"
+        android:name="com.example.librarypnlib.ui.statistics.TopFragment"
+        android:label="Top"
+        tools:layout="@layout/fragment_top" />
+
+    <fragment
+        android:id="@+id/nav_doanh_thu"
+        android:name="com.example.librarypnlib.ui.statistics.DoanhThuFragment"
+        android:label="Turnover"
+        tools:layout="@layout/fragment_doanh_thu" />
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.example.librarypnlib.ui.user.NguoiDungFragment"
+        android:label="Maneger"
+        tools:layout="@layout/fragment_nguoi_dung" />
+    <fragment
+        android:id="@+id/nav_pass"
+        android:name="com.example.librarypnlib.ui.user.MatKhauFragment"
+        android:label="Change password"
+        tools:layout="@layout/fragment_mat_khau" />
+    <activity
+        android:id="@+id/nav_log_out"
+        android:name="com.example.librarypnlib.ui.welcome.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+</navigation>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/background_white"
+    android:gravity="center">
+    <EditText
+        android:id="@+id/ed_TenTT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:background="@drawable/boder_box"
+        android:inputType="textPersonName"
+        android:hint="Nhập tên thủ thư . . ." />
+    <Spinner
+        android:id="@+id/sp_TenTV"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:background="@drawable/boder_box"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="Chọn tên thành viên"/>
+    <Spinner
+        android:id="@+id/sp_TenS"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:background="@drawable/boder_box"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="Chọn tên sách"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:padding="5dp"
+        android:background="@drawable/boder_box"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="Phiếu mượn (Đã trả): "
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/ckb_trangThai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/ed_NgayMuon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:background="@drawable/boder_box"
+        android:inputType="date"
+        android:fontFamily="@font/biorhyme_bold"
+        android:layout_marginBottom="20dp"
+        android:hint="Nhập  ngày mượn . . ." />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="50dp">
+        <ImageView
+            android:id="@+id/img_cancel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/cancel"
+            android:layout_marginRight="50dp"/>
+
+        <ImageView
+            android:id="@+id/img_save"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/save" />
+    </LinearLayout>
+
+
+</LinearLayout>
